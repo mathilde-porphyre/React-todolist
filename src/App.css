@@ -1,0 +1,201 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(250,249,254);
+  background: linear-gradient(90deg, rgba(250,249,254,1) 0%, rgba(208,194,232,1) 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding-bottom: 2em;
+  margin-top: 4rem;
+}
+
+header {
+  background-color: #3B3B71;
+  color: rgba(250,249,254,1);
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+}
+  
+.title-small {
+  color: rgba(250,249,254,1);
+  margin: 5px 0 0 0;
+  text-transform: none;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+
+
+/* FORM */
+
+form {
+  margin: 2rem 3rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: 1px solid #E6E9ED;
+  background-color: #F5F8FA;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-family: inherit;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  border: 1px solid #E6E9ED;
+  background-color: #F5F8FA;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-family: inherit;
+}
+
+
+
+/* TODO */
+
+.todo-list {
+  margin: 1rem 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.25em;
+  color: #3B3B71;
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item-content :nth-child(2) {
+  max-width: 70%;
+}
+
+.todo-item input {
+  margin-right: 10px;
+}
+
+.todo-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* CATEGORY */
+
+.category-label {
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.category-label.private {
+  background-color: rgb(255, 226, 221);
+  color: rgb(93, 23, 21);
+}
+
+.category-label.work {
+  background: rgb(211, 229, 239);
+  color: rgb(24, 51, 71);
+}
+
+
+
+/* DELETE */
+
+i {
+  color: #C3C3C3;
+  font-size: 16px;
+}
+
+i:hover {
+  color: #3B3B71;
+  cursor: pointer;
+}
+
+.fas.fa-pen.editing {
+  color: #3B3B71;
+}
+
+.todo-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+/* CHECKBOX */
+
+.rounded-checkbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #3B3B71;
+  background-color: #ffffff opacity 0.5;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  background: no-repeat center;
+}
+
+.rounded-checkbox:checked {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 13px 9px;
+  background-color: #3B3B71;
+}
+
+
+
+/* EDIT INPUT */
+
+.edit-input {
+  width: auto;
+}

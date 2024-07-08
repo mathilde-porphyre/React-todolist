@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3B3B71;
+}
+
+h2 span {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #747bff;
+}
+
+
+button {
+  border-radius: 5px;
+  border: 1.5px solid #7C81EF;
+  padding: 7px 12px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7C81EF;
+  color: rgba(250,249,254,1);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 30%;
+}
+
+button:hover {
+  background-color: rgba(250,249,254,1);
+  color: #7C81EF;
+}
+
+
+hr {
+  border: 1px solid #EAEBEE;
+  margin: 0 2rem;
+}
+
+
+
+/*
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
